@@ -40,7 +40,7 @@ Run the following command to run rspec:
 
 KNOWN BUGS
 ---------
-No known bugs
+If you do not enter a name for stylist or client (either when creating or updating) and hit enter, a blank name slot will be entered into the list.
 
 AUTHOR
 -------
