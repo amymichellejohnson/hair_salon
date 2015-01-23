@@ -1,6 +1,6 @@
 Hair Salon
 ------------
-Hair Salon allows the user to enter Stylists and their corresponding clients. One may view (list) all clients for each Stylist.
+Hair Salon allows the user to enter Stylists and their corresponding clients. One may view (list) all clients for each Stylist, update the stylist's name, or delete the stylist and her/his clients from the database.
 
 REQUIREMENTS
 ------------
@@ -40,7 +40,7 @@ Run the following command to run rspec:
 
 KNOWN BUGS
 ---------
-If you do not enter a name for stylist or client (either when creating or updating) and hit enter, a blank name slot will be entered into the list.
+If you do not enter a name for stylist or client (either when creating or updating) and hit enter, a blank name slot will be entered into the displayed list.
 
 AUTHOR
 -------

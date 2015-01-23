@@ -7,6 +7,7 @@ describe(Stylist) do
       expect(Stylist.all()).to(eq([]))
     end
   end
+
   describe(".find") do
     it("returns a stylist by its ID number") do
       test_stylist = Stylist.new({:name => "Nancy", :id => nil})
@@ -16,7 +17,6 @@ describe(Stylist) do
       expect(Stylist.find(test_stylist2.id())).to(eq(test_stylist2))
     end
   end
-
 
   describe("#name") do
     it("tells you the stylist's name") do

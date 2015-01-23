@@ -10,15 +10,14 @@
 </form>
 
 <% if @found_stylist.clients().any?() %>
-<h3>Here are all the clients for this stylist:</h3>
-
-<ol>
-  <% @found_stylist.clients().each() do |client| %>
-  <li><%= client.name() %></li>
-  <% end %>
-</ol>
-<% else %>
-<p>There are no clients yet!</p>
+  <h3>Here are all the clients for this stylist:</h3>
+  <ol>
+    <% @found_stylist.clients().each() do |client| %>
+      <li><%= client.name() %></li>
+    <% end %>
+  </ol>
+  <% else %>
+  <p>There are no clients yet!</p>
 <% end %>
 
 
