@@ -8,3 +8,8 @@
 
   <button type="submit">Update</button>
 </form>
+<form action="/stylist/<%= @found_stylist.id() %>" method="post">
+  <input name="_method" type="hidden" value="delete">
+
+  <button type="submit">Delete Stylist and his/her clients</button>
+</form>

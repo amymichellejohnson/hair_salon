@@ -45,3 +45,10 @@ get("/stylist/:id/edit") do
   @found_stylist = Stylist.find(params.fetch("id").to_i())
   erb(:stylist_edit)
 end
+
+delete("/stylist/:id") do
+  @found_stylist = Stylist.find(params.fetch("id").to_i())
+  @found_stylist.delete()
+  @stylists = Stylist.all()
+  erb(:index)
+end
