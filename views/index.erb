@@ -8,7 +8,7 @@
 </form>
 
 <% if @stylists.any?() %>
-<p>Click on a list to see its tasks:</p>
+<p>Click on a stylist to see his/her clients:</p>
 <ul>
   <% @stylists.each do |stylist| %>
   <li><a href="/stylist/<%= stylist.id() %>"><%= stylist.name() %></a></li>

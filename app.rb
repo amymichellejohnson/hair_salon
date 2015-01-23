@@ -25,6 +25,13 @@ get('/stylist/:id') do
   erb(:stylist)
 end
 
+patch("/stylist/:id") do
+  name = params.fetch("name")
+  @found_stylist = Stylist.find(params.fetch("id").to_i())
+  @found_stylist.update({:name => name})
+  erb(:stylist)
+end
+
 post("/clients") do
   name = params.fetch("name")
   stylist_id = params.fetch("stylist_id").to_i()
@@ -32,4 +39,9 @@ post("/clients") do
   client.save()
   @found_stylist = Stylist.find(stylist_id)
   erb(:stylist)
+end
+
+get("/stylist/:id/edit") do
+  @found_stylist = Stylist.find(params.fetch("id").to_i())
+  erb(:stylist_edit)
 end

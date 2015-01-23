@@ -1,4 +1,4 @@
-<h1>Add a client to <%= @found_stylist.name() %> </h1>
+<h1>Add a client for <%= @found_stylist.name() %> </h1>
 
 <form action="/clients" method="post">
   <input id="stylist_id" name="stylist_id" type="hidden" value="<%= @found_stylist.id() %>">
@@ -20,4 +20,5 @@
 <p>There are no clients yet!</p>
 <% end %>
 
-<a href="/">Return to Main Page</a>
+<p><a href="/stylist/<%= @found_stylist.id() %>/edit">Edit <%= @found_stylist.name() %>'s name </a></p>
+<p><a href="/">Return to Main Page</a></p>
